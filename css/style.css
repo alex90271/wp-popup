@@ -1,0 +1,74 @@
+    .confirm-buttons {
+        display: flex;
+        justify-content: center;
+        bottom: -16px;
+        padding: 8px 0;
+        background-color: #ffffff;
+        text-align: center;
+    }
+
+    .popup-image {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .popup-cta {
+        text-align: center;
+        padding-top: 20px;
+        font-weight: 500;
+        font-size: 2.5em !important;
+    }
+
+    .wp_popup_modal {
+        display: block;
+        position: fixed;
+        z-index: 5;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0, 0.1);
+        background-blend-mode: overlay;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+    .wp_popup_modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    @media (max-width: 480px) {
+        .wp_popup_modal-content {
+            width: auto;
+            margin: 15% 0% 0% 0%;
+            max-width: 100vw;
+        }
+    }
+
+    #close1 {
+        float: right;
+        font-size: 48px;
+        font-weight: bold;
+        position: absolute;
+    }
+
+    #close2 {
+        float: none;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
