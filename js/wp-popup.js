@@ -2,18 +2,14 @@
 var $j = jQuery.noConflict();
 var html = `<div class="wp_popup_modal" id="wp_popup_modal">
     <div class="wp_popup_modal-content"><span class="close" id="close1">×</span>
-        <p class="popup-cta">Notice</p>
-        <div class="popup-image" style="text-align: center;"><img style="height: 100%; margin-top: 15px; max-height: 300px;"
-                src="http://plugindev.local/wp-content/themes/twentytwentyfour/assets/images/building-exterior.webp"
-                alt="">
-        </div>
+        <h2 class="popup-cta">Notice</h2>
+        <p style="text-align: center;">${wp_popup_var.wp_popup_body}</p>
         <div class="confirm-buttons">
             <div>
                 <button class="btn btn-primary button"
                     onclick="redirect('${wp_popup_var.wp_popup_link}')">Visit</button><br>
             </div>
         </div>
-        <p style="text-align: center;">${wp_popup_var.wp_popup_body}</p>
         <span class="close" id="close2">Close</span>
     </div>
 </div>`;
