@@ -17,9 +17,7 @@
     .popup-cta {
         text-align: center;
         padding-top: 20px;
-        font-weight: 500;
-        font-size: 2.5em !important;
-    }
+        font-weight: 500;    }
 
     .wp_popup_modal {
         display: block;
@@ -54,14 +52,12 @@
 
     #close1 {
         float: right;
-        font-size: 48px;
         font-weight: bold;
         position: absolute;
     }
 
     #close2 {
         float: none;
-        font-size: 32px;
         font-weight: bold;
         text-align: center;
     }
