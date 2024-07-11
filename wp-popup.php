@@ -18,7 +18,7 @@ function wp_popup_admin_page()
     <form action="admin-post.php" name='wp_popup_form' , method="post">
       <p>Body</p>
         <input type="hidden" name="action" value="update_wp_popup" />
-        <input type="text" name="wp_popup_body" value="<?php echo $body_content ?>" />
+        <textarea type="text" name="wp_popup_body" value="<?php echo $body_content ?>"><?php echo $body_content ?></textarea>
       <p> Link</p>
         <input type="hidden" name="action" value="update_wp_popup" />
         <input type="text" name="wp_popup_link" value="<?php echo $link_name ?>" />
